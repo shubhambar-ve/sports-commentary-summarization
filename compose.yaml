@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    ports:
+      - "7860:7860"
+    volumes:
+      - model-cache:/home/user/.cache/huggingface
+volumes:
+  model-cache:
